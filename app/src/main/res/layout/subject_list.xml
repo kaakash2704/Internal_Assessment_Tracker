@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_subject"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_parent"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name"
+            android:id="@+id/subName"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/subcode"
+            />
+        <TextView
+            android:id="@+id/subcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Code"
+            android:textStyle="italic"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subName"
+            android:id="@+id/butview"
+            android:text="View Marks"></Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/butenter"
+            android:layout_below="@+id/butview"
+            android:text="Enter Marks"></Button>
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
